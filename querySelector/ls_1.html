@@ -13,17 +13,35 @@
 	<button id="bt3" type="submit">button 3</button>
 
 	<script>
-		let elem = {
+		/*let elem = {
 		elem1 : document.querySelector("#bt1"),
-		elem2 : document.querySelector("#bt2"),
+		elem2 : document.querySelector("#bt2"),*/
 
-	};
-	    elem.elem3 = document.querySelector("#bt3");
+	// };
+	let b = {a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}}
+
+	/*let a = document.querySelector("#bt1");
+	a.onclick = asd;*/
+
+	function asd(ob){
+		for (let obj in ob){
+			if(typeof obj == 'object'){
+				asd(obj);
+
+			}
+			else{
+				console.log(obj);
+			}
+		}
+	}
+	asd(b);
+
+	    /*elem.elem3 = document.querySelector("#bt3");
 	    elem.elem1.addEventListener('click', function() {
 	    	alert("button click")
 	    })
          
-         console.log(elem.elem1);
+         console.log(elem.elem1);*/
 	</script>
 	
 </body>
