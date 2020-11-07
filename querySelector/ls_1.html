@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <div id="elem1" >Our lesson</div>
+	<button id="elem2">click</button> -->
+	<button id="bt1" type="submit">button 1</button>
+	<button id="bt2" type="submit">button 2</button>
+	<button id="bt3" type="submit">button 3</button>
+
+	<script>
+		let elem = {
+		elem1 : document.querySelector("#bt1"),
+		elem2 : document.querySelector("#bt2"),
+
+	};
+	    elem.elem3 = document.querySelector("#bt3");
+	    elem.elem1.addEventListener('click', function() {
+	    	alert("button click")
+	    })
+         
+         console.log(elem.elem1);
+	</script>
+	
+</body>
+</html>
