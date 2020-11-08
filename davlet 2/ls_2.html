@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="ls_2.css">
+</head>
+<body>
+	<div id = "class1">
+		<p id="text1">Площадь</p>
+		<input id="input11" type="text"><br><br>
+
+		<p id="text1">Периметр</p>
+		<input id="input12" type="text"><br><br>
+
+		<center>
+			Длина:<br>
+			<input id="input21" type="text"><br>
+			Высота:<br>
+			<input id="input22" type="text"><br><br>
+		    <input id="input23" type="submit" value="Результат">
+		</center>
+		
+
+
+
+
+
+		<script>
+			let square = document.getElementById("input11");
+			let perimeter = document.getElementById("input12");
+		    let width = document.getElementById("input21");
+		    let heigth = document.getElementById("input22");
+		    let button = document.getElementById("input23");
+
+		    button.addEventListener("click", function() {
+		    	square.value = width.value * heigth.value;
+                perimeter.value = (width.value * 2) + (heigth.value * 2);
+
+		    })
+
+		</script>
+	</div>
+</body>
+</html>
